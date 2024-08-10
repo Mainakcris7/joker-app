@@ -1,0 +1,43 @@
+div.container{
+    width: 22vw;
+    min-height: 60vh;
+    border-radius: 10px;
+    background-color: #fbf490;
+    display: flex;
+    flex-direction: column;
+    padding: 0.95rem;
+    gap: 1rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+div.container div.joke-container{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.265);
+    padding: 0.8rem;
+    overflow-x: auto;
+}
+div.joke-container p{
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: black;
+    text-align: justify;
+}
+button#btn-fetch{
+    margin-left: auto;
+    width: min-content;
+}
+
+@media screen and (max-width: 720px){
+    div.container{
+        width: 70vw;
+    }
+}
+@media screen and (min-width: 720.1px) and (max-width: 900px){
+    div.container{
+        width: 50vw;
+    }
+}
